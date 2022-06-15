@@ -8,6 +8,9 @@
   --fb-visit: #3850858c;
   --button-visit: rgba(0, 148, 246, 0.6);
 
+  --width: 270px;
+  --width-left: 23.1rem;
+
   --ca: 219, 219, 219;
   --ba: 150, 150, 150;
 }
@@ -54,17 +57,25 @@ body {
   margin-inline: auto;
 }
 
-.cellphoto{
-  position: absolute;
-  top: 60px;
-  left: 420px;
+.cellphoto {
+  position: relative;
+  top: 20px;
+  left: 35px;
+}
+
+.cellphone {
+  background-size: 468.32px 634.15px;
+
+  width: 26rem;
+  background-position: -40px -5px;
+  background-image: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
 }
 
 .images img {
   height: 2.5rem;
 }
 
-.images{
+.images {
   display: flex;
 
   height: 2.5rem;
@@ -103,7 +114,7 @@ body {
   width: fit-content;
 }
 
-.login-box .insta-logo{
+.login-box .insta-logo {
   cursor: pointer;
 }
 
@@ -142,12 +153,12 @@ body {
   border-radius: 5%;
 }
 
-.login-box span{
+.login-box span {
   padding-left: 5px;
 }
 
 .login-box .user,
-.login-box .password{
+.login-box .password {
   display: flex;
 
   align-items: center;
@@ -169,8 +180,7 @@ body {
   height: 100%;
 }
 
-
-.login-box .text-box{
+.login-box .text-box {
   position: absolute;
 
   user-select: none;
@@ -182,11 +192,11 @@ body {
   cursor: text;
 }
 
-.login-box .textin{
+.login-box .textin {
   align-items: flex-start;
 }
 
-.login-box .textin{
+.login-box .textin {
   font-size: 0.65675rem;
 }
 
@@ -218,7 +228,6 @@ body {
 
   background-color: var(--bg-primary-color);
 }
-
 
 .with-fb {
   width: 100%;
@@ -350,4 +359,22 @@ body {
   font-size: 0.72rem;
 
   color: gray;
+}
+
+@media (max-width: 1024px) {
+  .cellphone {
+    display: none;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .footer-content {
+    display: none;
+  }
+
+  .big-box {
+    width: 100%;
+  }
 }
