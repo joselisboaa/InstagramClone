@@ -238,6 +238,7 @@ label#user-password {
 }
 
 .label .reveal {
+
   user-select: none;
 
   cursor: pointer;
