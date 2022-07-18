@@ -59,8 +59,9 @@ body {
 }
 
 .cellphoto {
+  display: none;
   position: relative;
-  top: 20px;
+  top: 25px;
   left: 35px;
 }
 
@@ -68,8 +69,15 @@ body {
   background-size: 468.32px 634.15px;
 
   width: 26rem;
-  background-position: -40px -5px;
+  background-position: -40px 0px;
   background-image: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
+}
+
+.active{
+  display: inline;
+  z-index: 100;
+
+  animation: fadeInFromNone 1.75s ease-in-out;
 }
 
 .images img {
@@ -78,10 +86,27 @@ body {
 
 .images {
   display: flex;
-
+  
   height: 2.5rem;
   justify-content: center;
   gap: 0.625rem;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0.1;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
 }
 
 /* ====== BIG BOX ============= */
