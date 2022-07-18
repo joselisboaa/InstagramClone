@@ -3,7 +3,6 @@ window.addEventListener('DOMContentLoaded', () =>{
   (function() {
     let i = 0;
     function toggle() {
-      console.log(i)
       if(i >= 1){
         const cellphone = document.querySelectorAll('.cellphone img')[i - 1];
         cellphone.classList.remove('active')
