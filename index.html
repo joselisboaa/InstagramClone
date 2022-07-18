@@ -24,29 +24,23 @@
               alt="instagram logo"
               class="insta-logo"
             />
-            <label class="user textin" for="userlogin">
-              <span class="text-box textin"
-                >Telefone, nome de usuário ou email</span
-              >
-              <input
-                type="text"
-                name="user"
-                value=""
-                id="userlogin"
-                aria-label="Telefone, nome de usuário ou email"
-              />
+            <label id="user-id" class="user" for="userlogin">
+              <span class="text-box">Telefone, nome de usuário ou email</span>
+              <input type="text" name="user" value="" id="userlogin" />
               <div class="div"></div>
             </label>
-            <label class="password textin" for="password">
-              <span class="text-box textin">Senha</span>
-              <input
-                type="text"
-                name="password"
-                id="password"
-                aria-label="Senha"
-              />
-              <div class="div"></div>
-            </label>
+            <div class="label">
+              <label id="user-password" class="password" for="password">
+                <span class="text-box">Senha</span>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  aria-label="Senha"
+                />
+              </label>
+              <div class="reveal">Ocultar</div>
+            </div>
             <button type="submit">Entrar</button>
             <div class="or">
               <div class="line"></div>
@@ -185,7 +179,7 @@
             <option value="uk">Українська</option>
           </select>
           <span>
-            2022 ©loned by
+            2022 Cloned by
             <a target="_blank" href="https://github.com/1mmanuelKant"
               >1mmanuelKant</a
             >
@@ -193,5 +187,8 @@
         </div>
       </footer>
     </div>
+    <script src="./inputs_behavior.js"></script>
+    <script src="./index.js"></script>
+    <script src="./reveal.js"></script>
   </body>
 </html>
