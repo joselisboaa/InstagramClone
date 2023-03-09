@@ -8,10 +8,8 @@
   --visit: rgba(var(--ba, 56, 81, 133), 1);
   --fb-visit: #3850858c;
   --button-visit: rgba(0, 148, 246, 0.6);
-
   --width: 270px;
   --width-left: 23.1rem;
-
   --ca: 219, 219, 219;
   --ba: 150, 150, 150;
 }
@@ -31,11 +29,8 @@ body {
 .main-container {
   display: flex;
   flex-flow: column wrap;
-
   gap: 2rem;
-
   margin-inline: auto;
-
   height: 50.75rem;
   width: 100%;
 }
@@ -51,9 +46,7 @@ body {
 .main-content {
   display: flex;
   flex-flow: row wrap;
-
   text-align: center;
-
   margin-top: 2rem;
   margin-inline: auto;
 }
@@ -67,7 +60,6 @@ body {
 
 .cellphone {
   background-size: 468.32px 634.15px;
-
   width: 26rem;
   background-position: -40px 0px;
   background-image: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
@@ -76,7 +68,6 @@ body {
 .active{
   display: inline;
   z-index: 100;
-
   animation: fadeInFromNone 1.75s ease-in-out;
 }
 
@@ -86,7 +77,6 @@ body {
 
 .images {
   display: flex;
-  
   height: 2.5rem;
   justify-content: center;
   gap: 0.625rem;
@@ -114,7 +104,6 @@ body {
 .big-box {
   display: flex;
   flex-flow: column wrap;
-
   gap: 1rem;
 }
 
@@ -123,12 +112,9 @@ body {
 .login-box {
   display: flex;
   flex-flow: column wrap;
-
   margin-top: 0.75rem;
-
   align-items: center;
   justify-content: start;
-
   border: solid 1px rgba(var(--ca6, 219, 219, 219), 1);
 }
 
@@ -150,24 +136,17 @@ body {
 
 .login-box button {
   color: #fff;
-
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
-
   background-color: var(--button-submit-disabled);
-
   user-select: none;
-
   border: none;
   padding: 0;
-
   margin-top: 1rem;
-
   height: 30px;
   width: 17.1875rem;
-
   border-radius: 0.3rem;
 }
 
@@ -179,14 +158,8 @@ body {
 .login-box label {
   display: flex;
   align-items: center;
-
-  border: solid 1px var(--bg-primary-color);
-
   height: 2.25rem;
   width: fit-content;
-
-  padding: 0 5px 0 0;
-
   border-radius: 5%;
 }
 
@@ -197,35 +170,25 @@ body {
 .login-box .user,
 .login-box .password {
   display: flex;
-
   width: fit-content;
 }
 
 .login-box input {
   border: 0px solid;
   text-overflow: ellipsis;
-
   width: fit-content;
-
   padding: 5px 5px 0 7.5px;
-
   font-size: 0.75rem;
-
   outline: none;
-
   width: 16.75rem;
   height: 100%;
 }
 
 .login-box .text-box {
   position: absolute;
-
   user-select: none;
-
   font-size: 0.75rem;
-
   color: gray;
-
   cursor: text;
 }
 
@@ -251,26 +214,18 @@ label#user-password {
 .label {
   display: flex;
   flex-flow: row wrap;
-
   width: 17.25rem;
-
   border: solid 1px var(--bg-primary-color);
-
   height: 2.5rem;
   margin-top: 0.25rem;
-
   align-items: center;
 }
 
 .label .reveal {
-
   user-select: none;
-
   cursor: pointer;
-
   font-weight: 600;
   font-size: 0.875rem;
-
   padding-right: 0.5rem;
 }
 
@@ -280,14 +235,10 @@ label#user-password {
 
 .or {
   display: flex;
-
   color: gray;
-
   width: 100%;
-
   align-items: center;
   justify-content: center;
-
   gap: 0.75rem;
 }
 
@@ -297,9 +248,7 @@ label#user-password {
 
 .line {
   width: 30%;
-
   height: 1px;
-
   background-color: var(--bg-primary-color);
 }
 
@@ -312,12 +261,9 @@ label#user-password {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-
   text-decoration: none;
   color: var(--fb);
-
   font-weight: 500;
-
   gap: 0.4rem;
 }
 
@@ -340,9 +286,7 @@ label#user-password {
 
 .forget a {
   text-decoration: none;
-
   font-size: 0.75rem;
-
   color: var(--forget);
   font-weight: 400;
 }
@@ -355,10 +299,8 @@ label#user-password {
 
 .register {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   height: 3.5rem;
 }
 
@@ -368,7 +310,6 @@ label#user-password {
 
 .register a {
   text-decoration: none;
-
   color: var(--button-submit);
   font-weight: 500;
 }
@@ -380,9 +321,7 @@ label#user-password {
 .getapp {
   display: flex;
   flex-flow: column wrap;
-
   font-size: 0.875rem;
-
   gap: 1.5rem;
 }
 
@@ -390,14 +329,10 @@ label#user-password {
 
 .footer-content {
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   gap: 1.5rem;
-
   flex-flow: column wrap;
-
   color: gray;
 }
 
@@ -408,32 +343,25 @@ label#user-password {
 .footer-content .boxes {
   display: flex;
   flex-flow: column wrap;
-
   gap: 0.75rem;
 }
 
 .footer-content .footer-box,
 .footer-content .lang {
   display: flex;
-
   flex-flow: row wrap;
-
   font-size: 0.75rem;
-
   gap: 0.75rem;
 }
 
 .footer-content a {
   text-decoration: none;
-
   color: gray;
 }
 
 .footer-content select {
   border: none;
-
   font-size: 0.72rem;
-
   color: gray;
 }
 

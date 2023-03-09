@@ -6,7 +6,7 @@ const spanPassword = document.querySelector('#user-password span');
 const labelPassword = document.querySelector('#user-password');
 const buttonLogin = document.querySelector('.login-box button');
 
-window.addEventListener('DOMContentLoaded', () =>{
+window.addEventListener('DOMContentLoaded', () => {
 
   inputId.addEventListener('input', (event) => {
     const i = event.currentTarget;
@@ -45,6 +45,7 @@ window.addEventListener('DOMContentLoaded', () =>{
       buttonLogin.classList.remove('active')
     }
   });
+  
   if(inputPassword.value === ''){
     revealPassword.innerText = ''
   };
